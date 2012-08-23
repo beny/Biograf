@@ -15,6 +15,7 @@
 
 // TODO comment
 @property (nonatomic, strong) NSMutableArray *movies;
+@property (nonatomic, strong) UIBarButtonItem *refreshButton;
 
 - (void)refreshButtonTapped:(id)sender;
 
@@ -30,13 +31,13 @@
 }
 
 - (void)reloadMovies {
-	NSString *jsonURLString = @"https://dl.dropbox.com/u/6840433/Biograf/zitkino.json";
+	NSString *jsonURLString = @"http://zitkino.cz/zitkino.json";
 	NSURL *jsonURL = [NSURL URLWithString:jsonURLString];
 	FSNConnection *connection = [FSNConnection withUrl:jsonURL method:FSNRequestMethodGET headers:nil parameters:nil parseBlock:^id(FSNConnection *c, NSError **error) {
 		return [c.responseData dictionaryFromJSONWithError:error];
 	} completionBlock:^(FSNConnection *connection) {
 		
-		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+		
 		
 		NSDictionary *result = (NSDictionary *)connection.parseResult;
 		NSArray *data = [result objectForKey:@"data"];
@@ -54,30 +55,48 @@
 			}
 		}
 		
+		// save to device
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		[defaults setObject:self.movies forKey:@"data"];
+		[defaults synchronize];
+		
 		// reload table
 		[[NSOperationQueue mainQueue] addOperationWithBlock:^{
+			[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+			self.refreshButton.enabled = YES;
 			[self.tableView reloadData];
 		}];
 		
 		
 	} progressBlock:nil];
 	
-	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 	[connection start];
+	
+	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+	self.refreshButton.enabled = NO;
+	
 }
 
 - (void)loadView {
 	[super loadView];
 	
+	// view controller attributes
 	self.title = @"Biograf";
+	self.navigationController.navigationBar.tintColor = UIColorFromRGB(0x5343ba);
 	
 	// add refresh button
-	UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshButtonTapped:)];
-	self.navigationItem.rightBarButtonItem = reloadButton;
+	self.refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshButtonTapped:)];
+	self.navigationItem.rightBarButtonItem = self.refreshButton;
 }
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+
+	// load from store
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	self.movies = [defaults objectForKey:@"data"];
+	[self.tableView reloadData];
+
 	[self reloadMovies];
 }
 
@@ -111,7 +130,8 @@
 	NSDictionary *movie = [[self.movies objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
 	cell.textLabel.text = [[movie objectForKey:@"title"] capitalizedString];
 	cell.detailTextLabel.text = [movie objectForKey:@"cinema"];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	
     return cell;
 }
 
