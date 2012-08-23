@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9825BF615E5F0750096855A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9825BF515E5F0750096855A /* UIKit.framework */; };
+		B9825BF815E5F0750096855A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9825BF715E5F0750096855A /* Foundation.framework */; };
+		B9825BFA15E5F0750096855A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9825BF915E5F0750096855A /* CoreGraphics.framework */; };
+		B9825C0015E5F0750096855A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9825BFE15E5F0750096855A /* InfoPlist.strings */; };
+		B9825C0215E5F0750096855A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C0115E5F0750096855A /* main.m */; };
+		B9825C0615E5F0750096855A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C0515E5F0750096855A /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9825BF115E5F0750096855A /* Biograf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biograf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9825BF515E5F0750096855A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9825BF715E5F0750096855A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9825BF915E5F0750096855A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9825BFD15E5F0750096855A /* Biograf-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Biograf-Info.plist"; sourceTree = "<group>"; };
+		B9825BFF15E5F0750096855A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9825C0115E5F0750096855A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9825C0315E5F0750096855A /* Biograf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Biograf-Prefix.pch"; sourceTree = "<group>"; };
+		B9825C0415E5F0750096855A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9825C0515E5F0750096855A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9825BEE15E5F0750096855A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9825BF615E5F0750096855A /* UIKit.framework in Frameworks */,
+				B9825BF815E5F0750096855A /* Foundation.framework in Frameworks */,
+				B9825BFA15E5F0750096855A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9825BE615E5F0750096855A = {
+			isa = PBXGroup;
+			children = (
+				B9825BFB15E5F0750096855A /* Biograf */,
+				B9825BF415E5F0750096855A /* Frameworks */,
+				B9825BF215E5F0750096855A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9825BF215E5F0750096855A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9825BF115E5F0750096855A /* Biograf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9825BF415E5F0750096855A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9825BF515E5F0750096855A /* UIKit.framework */,
+				B9825BF715E5F0750096855A /* Foundation.framework */,
+				B9825BF915E5F0750096855A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9825BFB15E5F0750096855A /* Biograf */ = {
+			isa = PBXGroup;
+			children = (
+				B9825C0415E5F0750096855A /* AppDelegate.h */,
+				B9825C0515E5F0750096855A /* AppDelegate.m */,
+				B9825BFC15E5F0750096855A /* Supporting Files */,
+			);
+			path = Biograf;
+			sourceTree = "<group>";
+		};
+		B9825BFC15E5F0750096855A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9825BFD15E5F0750096855A /* Biograf-Info.plist */,
+				B9825BFE15E5F0750096855A /* InfoPlist.strings */,
+				B9825C0115E5F0750096855A /* main.m */,
+				B9825C0315E5F0750096855A /* Biograf-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9825BF015E5F0750096855A /* Biograf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9825C0915E5F0750096855A /* Build configuration list for PBXNativeTarget "Biograf" */;
+			buildPhases = (
+				B9825BED15E5F0750096855A /* Sources */,
+				B9825BEE15E5F0750096855A /* Frameworks */,
+				B9825BEF15E5F0750096855A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Biograf;
+			productName = Biograf;
+			productReference = B9825BF115E5F0750096855A /* Biograf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9825BE815E5F0750096855A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Ondra Beneš";
+			};
+			buildConfigurationList = B9825BEB15E5F0750096855A /* Build configuration list for PBXProject "Biograf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9825BE615E5F0750096855A;
+			productRefGroup = B9825BF215E5F0750096855A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9825BF015E5F0750096855A /* Biograf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9825BEF15E5F0750096855A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9825C0015E5F0750096855A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9825BED15E5F0750096855A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9825C0215E5F0750096855A /* main.m in Sources */,
+				B9825C0615E5F0750096855A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B9825BFE15E5F0750096855A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9825BFF15E5F0750096855A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9825C0715E5F0750096855A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9825C0815E5F0750096855A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9825C0A15E5F0750096855A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
+				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9825C0B15E5F0750096855A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
+				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9825BEB15E5F0750096855A /* Build configuration list for PBXProject "Biograf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9825C0715E5F0750096855A /* Debug */,
+				B9825C0815E5F0750096855A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9825C0915E5F0750096855A /* Build configuration list for PBXNativeTarget "Biograf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9825C0A15E5F0750096855A /* Debug */,
+				B9825C0B15E5F0750096855A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9825BE815E5F0750096855A /* Project object */;
+}
