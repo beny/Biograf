@@ -20,6 +20,8 @@
 		B9825C1C15E5F30E0096855A /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C1915E5F30E0096855A /* FSNData.m */; };
 		B9825C2815E5FF0E0096855A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9825C2715E5FF0D0096855A /* Icon@2x.png */; };
 		B9825C2A15E5FF0F0096855A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9825C2915E5FF0F0096855A /* Icon.png */; };
+		B9CEE5AE15E61F24009A6C4D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9CEE5AD15E61F24009A6C4D /* Default@2x.png */; };
+		B9CEE5B015E61F26009A6C4D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9CEE5AF15E61F26009A6C4D /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		B9825C1915E5F30E0096855A /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = FSNetworking/src/FSNData.m; sourceTree = "<group>"; };
 		B9825C2715E5FF0D0096855A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B9825C2915E5FF0F0096855A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B9CEE5AD15E61F24009A6C4D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B9CEE5AF15E61F26009A6C4D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		B9825BE615E5F0750096855A = {
 			isa = PBXGroup;
 			children = (
+				B9CEE5AF15E61F26009A6C4D /* Default.png */,
+				B9CEE5AD15E61F24009A6C4D /* Default@2x.png */,
 				B9825C2915E5FF0F0096855A /* Icon.png */,
 				B9825C2715E5FF0D0096855A /* Icon@2x.png */,
 				B9825BFB15E5F0750096855A /* Biograf */,
@@ -192,6 +198,8 @@
 				B9825C0015E5F0750096855A /* InfoPlist.strings in Resources */,
 				B9825C2815E5FF0E0096855A /* Icon@2x.png in Resources */,
 				B9825C2A15E5FF0F0096855A /* Icon.png in Resources */,
+				B9CEE5AE15E61F24009A6C4D /* Default@2x.png in Resources */,
+				B9CEE5B015E61F26009A6C4D /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
 				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FSNetworking/src/** $(SRCROOT)/JSONKit/**";
 				WRAPPER_EXTENSION = app;
@@ -290,10 +299,14 @@
 		B9825C0B15E5F0750096855A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
 				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FSNetworking/src/** $(SRCROOT)/JSONKit/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -318,6 +331,7 @@
 				B9825C0B15E5F0750096855A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
