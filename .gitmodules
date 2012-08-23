@@ -1,0 +1,6 @@
+[submodule "FSNetworking"]
+	path = FSNetworking
+	url = git://github.com/foursquare/FSNetworking.git
+[submodule "JSONKit"]
+	path = JSONKit
+	url = git://github.com/johnezang/JSONKit.git

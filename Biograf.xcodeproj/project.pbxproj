@@ -13,6 +13,11 @@
 		B9825C0015E5F0750096855A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9825BFE15E5F0750096855A /* InfoPlist.strings */; };
 		B9825C0215E5F0750096855A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C0115E5F0750096855A /* main.m */; };
 		B9825C0615E5F0750096855A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C0515E5F0750096855A /* AppDelegate.m */; };
+		B9825C0E15E5F1010096855A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C0D15E5F1010096855A /* ListViewController.m */; };
+		B9825C1315E5F3020096855A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C1215E5F3020096855A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B9825C1A15E5F30E0096855A /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C1515E5F30E0096855A /* FSN_categories.m */; };
+		B9825C1B15E5F30E0096855A /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C1715E5F30E0096855A /* FSNConnection.m */; };
+		B9825C1C15E5F30E0096855A /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = B9825C1915E5F30E0096855A /* FSNData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		B9825C0315E5F0750096855A /* Biograf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Biograf-Prefix.pch"; sourceTree = "<group>"; };
 		B9825C0415E5F0750096855A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9825C0515E5F0750096855A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9825C0C15E5F1010096855A /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		B9825C0D15E5F1010096855A /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		B9825C1115E5F3020096855A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		B9825C1215E5F3020096855A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		B9825C1415E5F30E0096855A /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = FSNetworking/src/FSN_categories.h; sourceTree = "<group>"; };
+		B9825C1515E5F30E0096855A /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = FSNetworking/src/FSN_categories.m; sourceTree = "<group>"; };
+		B9825C1615E5F30E0096855A /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = FSNetworking/src/FSNConnection.h; sourceTree = "<group>"; };
+		B9825C1715E5F30E0096855A /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = FSNetworking/src/FSNConnection.m; sourceTree = "<group>"; };
+		B9825C1815E5F30E0096855A /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = FSNetworking/src/FSNData.h; sourceTree = "<group>"; };
+		B9825C1915E5F30E0096855A /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = FSNetworking/src/FSNData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				B9825BFB15E5F0750096855A /* Biograf */,
+				B9825BFC15E5F0750096855A /* Supporting Files */,
 				B9825BF415E5F0750096855A /* Frameworks */,
 				B9825BF215E5F0750096855A /* Products */,
 			);
@@ -62,6 +78,8 @@
 		B9825BF415E5F0750096855A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9825C1015E5F2F50096855A /* FSNetworking */,
+				B9825C0F15E5F2F00096855A /* JSONKit */,
 				B9825BF515E5F0750096855A /* UIKit.framework */,
 				B9825BF715E5F0750096855A /* Foundation.framework */,
 				B9825BF915E5F0750096855A /* CoreGraphics.framework */,
@@ -74,7 +92,8 @@
 			children = (
 				B9825C0415E5F0750096855A /* AppDelegate.h */,
 				B9825C0515E5F0750096855A /* AppDelegate.m */,
-				B9825BFC15E5F0750096855A /* Supporting Files */,
+				B9825C0C15E5F1010096855A /* ListViewController.h */,
+				B9825C0D15E5F1010096855A /* ListViewController.m */,
 			);
 			path = Biograf;
 			sourceTree = "<group>";
@@ -88,6 +107,29 @@
 				B9825C0315E5F0750096855A /* Biograf-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Biograf;
+			sourceTree = "<group>";
+		};
+		B9825C0F15E5F2F00096855A /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				B9825C1115E5F3020096855A /* JSONKit.h */,
+				B9825C1215E5F3020096855A /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		B9825C1015E5F2F50096855A /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B9825C1415E5F30E0096855A /* FSN_categories.h */,
+				B9825C1515E5F30E0096855A /* FSN_categories.m */,
+				B9825C1615E5F30E0096855A /* FSNConnection.h */,
+				B9825C1715E5F30E0096855A /* FSNConnection.m */,
+				B9825C1815E5F30E0096855A /* FSNData.h */,
+				B9825C1915E5F30E0096855A /* FSNData.m */,
+			);
+			name = FSNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +196,11 @@
 			files = (
 				B9825C0215E5F0750096855A /* main.m in Sources */,
 				B9825C0615E5F0750096855A /* AppDelegate.m in Sources */,
+				B9825C0E15E5F1010096855A /* ListViewController.m in Sources */,
+				B9825C1315E5F3020096855A /* JSONKit.m in Sources */,
+				B9825C1A15E5F30E0096855A /* FSN_categories.m in Sources */,
+				B9825C1B15E5F30E0096855A /* FSNConnection.m in Sources */,
+				B9825C1C15E5F30E0096855A /* FSNData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +274,7 @@
 				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
 				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FSNetworking/src/** $(SRCROOT)/JSONKit/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -238,6 +286,7 @@
 				GCC_PREFIX_HEADER = "Biograf/Biograf-Prefix.pch";
 				INFOPLIST_FILE = "Biograf/Biograf-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FSNetworking/src/** $(SRCROOT)/JSONKit/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
